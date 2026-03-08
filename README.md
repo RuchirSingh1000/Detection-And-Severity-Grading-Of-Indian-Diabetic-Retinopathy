@@ -124,18 +124,31 @@ QWK is particularly important because DR grading is an **ordinal classification 
 
 ## Project Structure
 idrid-project/
+
 │
+
 ├── data/
+
 │ ├── train/
+
 │ ├── test/
+
 │ ├── train_labels.csv
+
 │ └── test_labels.csv
+
 │
+
 ├── dataset.py
+
 ├── train_binary_dr.py
+
 ├── train_grading.py
+
 ├── evaluate_detailed.py
+
 ├── models.py
+
 └── inference.py
 
 
