@@ -123,3 +123,96 @@ QWK is particularly important because DR grading is an **ordinal classification 
 ---
 
 ## Project Structure
+idrid-project/
+│
+├── data/
+│ ├── train/
+│ ├── test/
+│ ├── train_labels.csv
+│ └── test_labels.csv
+│
+├── dataset.py
+├── train_binary_dr.py
+├── train_grading.py
+├── evaluate_detailed.py
+├── models.py
+└── inference.py
+
+
+---
+
+## Installation
+
+Clone the repository:
+
+
+git clone https://github.com/yourusername/idrid-project.git
+
+cd idrid-project
+
+
+Install dependencies:
+
+
+pip install torch torchvision timm opencv-python scikit-learn matplotlib seaborn
+
+
+---
+
+## Training
+
+### Binary DR Detection
+
+
+python train_binary_dr.py
+
+
+### DR and DME Grading
+
+
+python train_grading.py
+
+
+---
+
+## Example Output Metrics
+
+Binary DR Detection:
+
+- Accuracy: ~85–90%
+- AUC: ~0.90
+- Sensitivity: High detection capability
+
+DR Grading:
+
+- QWK ≈ 0.70
+- Demonstrates strong agreement with ground truth severity labels.
+
+---
+
+## Applications
+
+This system can serve as an **AI-assisted screening tool** for:
+
+- Early diabetic retinopathy detection
+- Rural healthcare screening programs
+- Automated retinal analysis
+- Clinical decision support systems
+
+---
+
+## Future Work
+
+Potential improvements include:
+
+- Lesion segmentation using U-Net
+- Ensemble models for improved performance
+- Cross-validation training
+- Deployment as a web-based diagnostic tool
+- Integration with hospital screening workflows
+
+---
+
+## Author
+
+Developed as part of an academic project on medical image analysis and deep learning.
